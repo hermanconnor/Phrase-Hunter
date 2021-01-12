@@ -19,6 +19,11 @@ onscreenKeyboard.addEventListener('click', e => {
 });
 
 // Add event listener to players physical keyboard
+const keyboard = document.querySelectorAll('#qwerty button');
 document.addEventListener('keydown', e => {
-  game.handleKeypress(e.key);
+  for (let key of keyboard) {
+    if (key.textContent === e.key) {
+      game.handleInteraction(key);
+    }
+  }
 });

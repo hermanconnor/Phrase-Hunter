@@ -49,10 +49,11 @@ class Game {
   /**
    * Handles onscreen keyboard button clicks
    * @param (HTMLButtonElement) button - The clicked button element
+   * Check letter, display if correct, check for win, add class for correct/incorrect guess
    */
   handleInteraction(button) {
     const letter = button.innerText;
-    // Check letter, display if correct, check for win, add class for correct/incorrect guess
+
     if (this.activePhrase.checkLetter(letter)) {
       this.activePhrase.showMatchedLetter(letter);
       button.className = 'chosen';
@@ -68,29 +69,12 @@ class Game {
   }
 
   /**
-   * Lets players use their physical computer keyboard to enter guesses.
-   * @param key - The key that's pressed on physical keyboard
-   */
-  handleKeypress(key) {
-    if (this.activePhrase.checkLetter(key)) {
-      this.activePhrase.showMatchedLetter(key);
-      if (this.checkForWin()) {
-        this.gameOver(true);
-      }
-    } else {
-      this.removeLife();
-    }
-  }
-
-  /**
    * Increases the value of the missed property
    * Removes a life from the scoreboard
    * Checks if player has remaining lives and ends game if player is out
    */
   removeLife() {
-    // Gets the first instance of the heart image in the list
     let lostHearts = document.querySelector('img[src="images/liveHeart.png"]');
-    // Change the image to 'remove' a heart from scoreboard
     lostHearts.src = 'images/lostHeart.png';
     this.missed++;
 
