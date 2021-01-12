@@ -5,4 +5,5 @@ A player has 5 tries to guess a correct letter in the phrase. If the guess is co
 A letter can be guessed only once, and is disabled on the onscreen keyboard after the players guess.
 If the player guesses the phrase before they run out of tries, a winner's screen is displayed.
 If the player makes 5 incorrect guesses, a losing screen is displayed.
+Event listener was added to allow players to enter a guess, using the physical keyboard on their computer.
 Animations/keyframes were added to the CSS to have the title move-in from the left, and the button move-in from the right.
