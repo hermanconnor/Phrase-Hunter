@@ -7,3 +7,4 @@ If the player guesses the phrase before they run out of tries, a winner's screen
 If the player makes 5 incorrect guesses, a losing screen is displayed.
 Event listener was added to allow players to enter a guess, using the physical keyboard on their computer.
 Animations/keyframes were added to the CSS to have the title and start button fade-in, and the title move-in from the left, and the start button move-in from the right.
+Box-shadow and other hover effects were added to the start button
