@@ -66,6 +66,14 @@ button {
   width: 200px;
   margin: 0 auto;
   animation: moveInRight 1s ease-out;
+  transition: all 0.7s ease-in-out;
+}
+
+#btn__reset:hover {
+  color: #fff;
+  background-color: #3a3f58;
+  border-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.5);
 }
 
 .main-container {
