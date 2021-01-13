@@ -106,13 +106,16 @@ class Game {
     let message = document.getElementById('game-over-message');
 
     if (gameWon) {
-      message.innerText = 'You Win!🏆';
+      message.innerText = `You Win!🏆
+      You guessed "${this.activePhrase.phrase}"
+      You know your movies!`;
       overlay.classList.remove('start');
       overlay.classList.remove('lose');
       overlay.classList.add('win');
       overlay.style.display = 'block';
     } else {
-      message.innerText = 'You Lose!😢';
+      message.innerText = `You Lose!😢
+      Hint: Phrases are from awesome action movies`;
       overlay.classList.remove('start');
       overlay.classList.remove('win');
       overlay.classList.add('lose');

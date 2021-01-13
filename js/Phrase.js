@@ -32,7 +32,7 @@ class Phrase {
    * @param (string) letter - Letter to check
    */
   checkLetter(letter) {
-    // return true/false if passed letter matches letter in phrase
+    // return true/false if passed letter, matches letter in phrase
     return this.phrase.includes(letter) ? true : false;
   }
 

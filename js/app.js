@@ -22,7 +22,7 @@ onscreenKeyboard.addEventListener('click', e => {
 const keyboard = document.querySelectorAll('#qwerty button');
 document.addEventListener('keydown', e => {
   for (let key of keyboard) {
-    if (key.textContent === e.key) {
+    if (key.textContent === e.key && key.className !== 'wrong') {
       game.handleInteraction(key);
     }
   }
