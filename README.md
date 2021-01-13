@@ -6,4 +6,4 @@ A letter can be guessed only once, and is disabled on the onscreen keyboard afte
 If the player guesses the phrase before they run out of tries, a winner's screen is displayed.
 If the player makes 5 incorrect guesses, a losing screen is displayed.
 Event listener was added to allow players to enter a guess, using the physical keyboard on their computer.
-Animations/keyframes were added to the CSS to have the title move-in from the left, and the button move-in from the right.
+Animations/keyframes were added to the CSS to have the title and start button fade-in, and the title move-in from the left, and the start button move-in from the right.
